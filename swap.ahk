@@ -1,6 +1,5 @@
-; this is my script
+; this is my script for charter to suck my ass.
 ; grant foster 2019
-;
 
 ; this is the Big Swap
 LWin::LAlt
@@ -8,7 +7,6 @@ LAlt::LWin
 
 ; this is for skippin 'round
 ; cmd + arrows - start & end of lines, with shift for selecting text
-;
 #Left::SendInput {Home}
 #Right::SendInput {End}
 #Up::SendInput ^{Home}
