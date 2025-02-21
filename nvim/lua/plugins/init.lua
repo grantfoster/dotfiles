@@ -24,6 +24,7 @@ return {
         "gowork",
         "html",
         "lua",
+        "markdown",
         "vim",
         "vimdoc",
       },
