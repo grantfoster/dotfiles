@@ -3,8 +3,8 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    -- TODO: try and get "golines" worked out
-    go = { "gofmt", "goimports" },
+    -- TODO: try and get "golines"
+    go = { "gofumpt", "goimports" },
   },
 
   format_on_save = {
