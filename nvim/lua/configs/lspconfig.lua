@@ -8,7 +8,7 @@ local lspconfig = require "lspconfig"
 local servers = { "html", "cssls" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
-require("lspconfig").gopls.setup {
+lspconfig.gopls.setup {
   on_attach = nvlsp.on_attach,
   on_init = nvlsp.on_init,
   capabilities = nvlsp.capabilities,
@@ -16,6 +16,8 @@ require("lspconfig").gopls.setup {
   filetypes = { "go", "gomod", "gowork", "gotmpl" },
   root_dir = util.root_pattern("go.work", "go.mod", ".git"),
 }
+
+lspconfig.postgres_lsp.setup {}
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do

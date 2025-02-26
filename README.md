@@ -83,3 +83,4 @@ ln -s WHEREVER/THIS/REPO/IS/nvim ~/.config
 ln -s WHEREVER/THIS/REPO/IS/starship.toml ~/.config
 ~~~
 
+### ur gona need postgres_lsp too
