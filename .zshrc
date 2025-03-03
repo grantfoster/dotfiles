@@ -21,6 +21,13 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:$HOME/go/bin"
 
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-[[ -s /home/grant/.autojump/etc/profile.d/autojump.sh ]] && source /home/grant/.autojump/etc/profile.d/autojump.sh
+
+# WSL Linux
+# [[ -s /home/grant/.autojump/etc/profile.d/autojump.sh ]] && source /home/grant/.autojump/etc/profile.d/autojump.sh
+
+# Mac/Brew
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 autoload -U compinit && compinit -u
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+export PATH="/Users/grant/.asdf/installs/rust/1.85.0/bin:$PATH"

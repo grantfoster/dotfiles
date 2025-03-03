@@ -17,7 +17,10 @@ lspconfig.gopls.setup {
   root_dir = util.root_pattern("go.work", "go.mod", ".git"),
 }
 
-lspconfig.postgres_lsp.setup {}
+lspconfig.postgres_lsp.setup {
+  cmd = { "postgres_lsp", "lsp-proxy" },
+  filetypes = { "sql" },
+}
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
