@@ -22,6 +22,9 @@ export PATH="$PATH:$HOME/go/bin"
 
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
+# make sure npm global binaries are in path for CURRENT node version
+export PATH="$(npm config get prefix)/bin:$PATH"
+
 # WSL Linux
 # [[ -s /home/grant/.autojump/etc/profile.d/autojump.sh ]] && source /home/grant/.autojump/etc/profile.d/autojump.sh
 

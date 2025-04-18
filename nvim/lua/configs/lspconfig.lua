@@ -13,7 +13,7 @@ lspconfig.gopls.setup {
   on_init = nvlsp.on_init,
   capabilities = nvlsp.capabilities,
   cmd = { "gopls" },
-  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  filetypes = { "go", "gomod", "gowork", "gotmpl", "tmpl" },
   root_dir = util.root_pattern("go.work", "go.mod", ".git"),
 }
 

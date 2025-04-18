@@ -1,5 +1,6 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
+vim.g.vscode_snippets_path = "~/.vscode/extensions/golang.go-0.46.1"
 
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
@@ -24,6 +25,9 @@ require("lazy").setup({
 
   { import = "plugins" },
 }, lazy_config)
+
+-- load golang vscode snippets
+require("luasnip.loaders.from_vscode").load { paths = { vim.g.vscode_snippets_path } }
 
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
